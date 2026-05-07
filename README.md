@@ -1,9 +1,12 @@
 Invoice Data Extraction using Nanonets (No-Code AI)
+
 🚀 Overview
 
-This project demonstrates how to convert unstructured financial documents (invoices in PDF/image format) into structured, usable data using Nanonets, a no-code AI platform for intelligent document processing.
+This project demonstrates how to convert unstructured financial documents (invoices in PDF/image format) into structured, usable data using Nanonets, 
+a no-code AI platform for intelligent document processing.
 
-The lab showcases how AI-powered automation can replace manual data entry, reduce errors, and accelerate financial workflows—without writing a single line of code.
+The lab showcases how AI-powered automation can replace manual data entry, reduce errors, and accelerate financial workflows—without
+writing a single line of code.
 
 🎯 Objective
 
@@ -27,21 +30,6 @@ The Scale of the Problem:
 * 42 hours of manual work → 4 hours with AI
 * ₹21,000 cost → ₹2,000 with automation
 
-💡 Solution
-
-Nanonets uses a multi-step AI pipeline to process invoices:
-
-``
-Invoice (PDF/Image)
-    → OCR (Text Extraction)
-    → Layout Understanding
-    → Data Extraction (NLP/NER)
-    → Table Parsing
-    → Business Rule Validation
-    → Structured Output (JSON/CSV)
-    → Question Answering (LLM)
-``
-
 🏗️ Technology Architecture
 
 | Step | Function | Technology | Outcome |
@@ -62,105 +50,41 @@ Invoice (PDF/Image)
 * LayoutLM – Layout-aware document understanding
 * LLM Integration – Natural language question answering
 
-📋 Sample Invoice Used
+✅ Solution
+One-click AI extraction workflow:
 
-Invoice Number: DQA-INV-2026-589  
-Vendor: Delta Quant Analytics Pvt. Ltd.  
-Client: Apex Wealth Management Ltd.  
+Upload invoice PDFs to Nanonets
 
-| Item | Description | Qty | Unit Price (₹) | Amount (₹) |
-|------|-------------|-----|----------------|------------|
-| 1 | Quantitative Risk Modeling | 1 | 35,000 | 35,000 |
-| 2 | Derivatives Pricing Engine Setup | 1 | 28,000 | 28,000 |
-| 3 | Data Pipeline Engineering Support | 8 | 2,500 | 20,000 |
-| 4 | Regulatory Compliance Audit Assistance | 2 | 12,000 | 24,000 |
-| 5 | Cloud Compute Usage (March) | 1 | 9,800 | 9,800 |
-| 6 | Training Workshop (Onsite) | 3 | 6,000 | 18,000 |
+AI auto-detects fields (invoice #, date, vendor, total)
 
-Subtotal: ₹134,800  
-Discount (7.5%): ₹10,110  
-Net Amount: ₹124,690  
-GST (18%): ₹22,444.20  
-TDS (10%): ₹12,469.00  
-Total Payable: ₹134,666  
+Review highlighted extractions
 
-⭐ Key Features Demonstrated
-* Automatic field extraction – Invoice number, dates, vendor, client, amounts
-* Table reconstruction – Line items with quantities and prices
-* Financial validation – Verifying calculations (Qty × Price = Amount)
-* Tax computation checks – GST and TDS accuracy validation
-* Natural language Q&A – Ask questions about the invoice in plain English
+Export structured data to Excel/CSV
 
-📝 50 Sample Questions for Testing
-Section A: Basic Extraction (1–10)
-What is the invoice number?
-What is the invoice date?
-Who is the vendor?
-What is the total payable amount?
-What is the GST amount?
+Feed into Sheets/Power BI/ERP
 
-Section B: Line Item Understanding (11–20)
-List all services in the invoice
-Which service has the highest value?
-How many total line items are present?
+Workflow: PDF Upload → Nanonets OCR → structured 
 
-Section C: Discount, Tax, TDS (21–30)
-What discount percentage is applied?
-Is GST calculated on the correct base amount?
-Explain the calculation sequence (Subtotal → Discount → GST → TDS → Total)
+## 📸 Screenshots
 
-Section D: Validation Logic (31–40)
-Does Qty × Unit Price equal Amount for all line items?
-Does subtotal match the sum of all line items?
-Are there any inconsistencies in calculations?
+### 1. Nanonets invoice with multiple question
 
-Section E: Error Detection (41–45)
-Are there any duplicate line items?
-Could GST be applied on the wrong amount?
+![Google Form](nanonets_questions.png)
 
-Section F: Insight & Summary (46–50)
-Provide a complete summary of this invoice
-Break down the total payable into components
+---
 
-📈 Business Relevance
+### 2. Nanonet with multiple answers
 
-| Manual Process | AI System |
-|----------------|-----------|
-| Human reads invoice | OCR extracts text |
-| Human understands structure | NLP + Layout models parse |
-| Manual typing | Auto extraction |
-| Manual calculation | Rule engine validates |
-| Human explains | LLM generates answers |
+![Google Sheet](nanonets_answers.png)
 
-🧠 Use Cases
-* Accounts Payable Automation – Process thousands of invoices without manual entry
-* Audit Support – Maintain accurate, traceable extraction records
-* Financial Reporting – Real-time data for dashboards and analytics
-* Compliance – Automated GST/TDS validation
+---
 
-🔮 Future Scope
-* Integration with ERP systems (SAP, Oracle)
-* Approval workflow automation
-* Fraud detection using pattern analysis
-* Multi-currency and multi-language support
-* Real-time dashboard integration
+🏁 Conclusion
+MBA Takeaway: This is Intelligent Document Processing (IDP)—the backbone of Digital Finance Transformation to extract the text from large files. 
+Large enterprises use Nanonets to achieve analytics and 50% cost reduction.
 
-📌 Key Learnings
-Invoice AI is a multi-step pipeline, not a single tool
-Combines Computer Vision + NLP + Machine Learning + Business Rules
-Accuracy depends on data quality, model training, and validation logic
-AI extracts → Finance validates – Human oversight remains critical
-Errors commonly occur in discount, GST, and TDS calculations
+👩‍💼 Author
 
-🎓 How to Use This Lab
-Upload invoice PDF to Nanonets
-Ask 5–10 basic extraction questions
-Move to validation questions
-Challenge: "Is the AI answer correct?"
-Export data to Excel for further analysis
+Divyam Narang
 
-📚 Summary
-
-> OCR → Reads | NLP → Understands | Rules → Validates | LLM → Explains
-
-Invoice AI systems do not just read documents—they understand, validate, and explain financial data
+MBA Finance Student | AI in Finance Practitioner
