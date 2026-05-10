@@ -69,13 +69,13 @@ Workflow: PDF Upload → Nanonets OCR → structured
 
 ### 1. Nanonets invoice with multiple question
 
-![Google Form](nanoset_questions.png)
+![Google Form](nanonet_questions.png)
 
 ---
 
 ### 2. Nanonet with multiple answers
 
-![Google Sheet](nanosets_answers.png)
+![Google Sheet](nanonets_answers.png)
 
 ---
 
