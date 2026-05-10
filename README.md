@@ -85,6 +85,6 @@ Large enterprises use Nanonets to achieve analytics and 50% cost reduction.
 
 👩‍💼 Author
 
-Prachi Ahuja
+Himanshu Goyal
 
 MBA Finance Student | AI in Finance Practitioner
